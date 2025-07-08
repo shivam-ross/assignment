@@ -1,4 +1,4 @@
-const COMPANIES_HOUSE_API_KEY = "555fcdbb-5f62-457a-8c6c-95695c58876a";
+const COMPANIES_HOUSE_API_KEY = import.meta.env.VITE_COMPANIES_HOUSE_API_KEY;
 
 export async function searchCompanies(query: string) {
   if (!query) {
